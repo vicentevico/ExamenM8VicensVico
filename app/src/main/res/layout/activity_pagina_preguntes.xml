@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pagina_preguntes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alumnedam.examenm8vicensvico.Vista.PaginaPreguntes">
+
+    <TextView
+        android:text="Encerts: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="29dp"
+        android:id="@+id/LBLEncerts" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/LBLValorEncerts"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="87dp"
+        android:layout_marginEnd="87dp"
+        android:id="@+id/LBLErrades"
+        android:text="Errades:" />
+
+    <TextView
+        android:layout_width="60px"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/LBLErrades"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:id="@+id/LBLValorErrades" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LBLEncerts"
+        android:layout_alignLeft="@+id/LBLEncerts"
+        android:layout_alignStart="@+id/LBLEncerts"
+        android:layout_marginTop="49dp"
+        android:id="@+id/LBLPregunta"
+        android:layout_alignRight="@+id/LBLValorErrades"
+        android:layout_alignEnd="@+id/LBLValorErrades" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/LBLPregunta"
+        android:layout_marginTop="32dp"
+        android:id="@+id/TBResposta"
+        android:layout_alignLeft="@+id/LBLPregunta"
+        android:layout_alignStart="@+id/LBLPregunta"
+        android:layout_alignRight="@+id/LBLPregunta"
+        android:layout_alignEnd="@+id/LBLPregunta" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TBResposta"
+        android:layout_marginTop="26dp"
+        android:id="@+id/LBLValorResposta"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Seguent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/BTSeguent"
+        android:layout_below="@+id/LBLValorResposta"
+        android:layout_toLeftOf="@+id/LBLValorErrades"
+        android:layout_toStartOf="@+id/LBLValorErrades"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/LBLValorEncerts"
+        android:layout_width="60px"
+        android:layout_above="@+id/LBLPregunta"
+        android:layout_toRightOf="@+id/LBLEncerts"
+        android:layout_toEndOf="@+id/LBLEncerts"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />
+
+    <Button
+        android:text="Comprovar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/BTSeguent"
+        android:layout_toRightOf="@+id/LBLEncerts"
+        android:layout_toEndOf="@+id/LBLEncerts"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/BTComprobar" />
+</RelativeLayout>
