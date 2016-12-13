@@ -36,7 +36,7 @@ public class PaginaPreguntes extends AppCompatActivity  implements View.OnClickL
         String tema = intent.getStringExtra("tema");
         nombrePreguntes = Integer.valueOf(intent.getStringExtra("nombrePreguntes"));
 
-        test = new Test(tema, 5);
+        test = new Test(tema, nombrePreguntes);
 
         LBLPregunta = (TextView) findViewById(R.id.LBLPregunta);
         TBResposta = (EditText) findViewById(R.id.TBResposta);
